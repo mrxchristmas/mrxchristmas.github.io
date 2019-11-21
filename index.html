@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oink Cup</title>
+    
+    <link href="lib/css/main.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css" /> -->
+    <?php
+        include './views/helpers/page_head.php';
+    ?>
+</head>
+<body onLoad='init()'>
+    <form name="form1" action="" method="post" enctype="multipart/form-data">
+
+    <div id="gallery">
+        <img src="./lib/images/static/gallery.png" draggable="false" />
+        <p>Order Now</p>
+    </div>
+    <div id="promotions">
+        <img src="./lib/images/static/promotions.png" draggable="false" />
+        <p>Learn More</p>
+    </div>
+    <div id="rewards">
+        <img src="./lib/images/static/rewards.png" draggable="false" />
+        <p>Learn More</p>
+    </div>
+    <?php
+        include './views/helpers/page_footer.php';
+    ?>
+
+    
+     </form>
+    <script src="./lib/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="./lib/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="./lib/js/main.js" type="text/javascript"></script>
+    <script src="./controllers/js/main.js" type="text/javascript"></script>
+
+    
+</body>
+
+
+</html>
