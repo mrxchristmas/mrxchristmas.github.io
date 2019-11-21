@@ -1,0 +1,101 @@
+:root {
+    --c1: #ede1d2;
+    --c2: #dbc1ac;
+    --c3: #967259;
+    --c4: #634832;
+    --c5: #38220f;
+    --contentWidth: 1200px;
+    --defaultWIdth: 1200;
+    --defaultWidthVW: 80vw;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    /* max-width: 100vw; */
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span, p, a, img, h1, h2, h3, h4, h5, h6{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#create_head img{
+    max-width: 120px;
+    z-index: 100;
+    position: relative;
+    /* padding: 20px; */
+    margin-left: 5vw;
+    border: 10px solid whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#create_con{
+    width: 100vw;
+    height: auto;
+    /* background-color: var(--c2); */
+    border-top: 70px solid var(--c2);
+    position: relative;
+    top: -50px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+#create_con .container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+    #create_con .container input[type="text"], input[type="password"]{
+        font-size: 24px;
+        border: none;
+        border-bottom: thin solid black;
+        margin: 20px;
+        padding: 8px;
+        background-color: transparent;
+        color: var(--c5); 
+    }
+        ::placeholder { /* Firefox, Chrome, Opera */ 
+            color: var(--c4); 
+        } 
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+            color: var(--c4); 
+        } 
+        ::-ms-input-placeholder { /* Microsoft Edge */ 
+            color: var(--c4); 
+        } 
+    #create_con .container span{
+        font-size: 24px;
+        color: var(--c5);
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    #create_con .container .terms_con{
+        margin-bottom: 20px;
+    }
+    #create_con .container .terms_con label{
+        font-size: 20px;
+    }
+
+    #create_con .container #create_submit{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px;
+        padding: 8px;
+        background-color: var(--c3);
+        color: var(--c5); 
+        cursor: pointer;
+        border-radius: 25px;
+        padding: 15px;
+        -webkit-box-shadow: -7px 7px 21px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: -7px 7px 21px -4px rgba(0,0,0,0.75);
+        box-shadow: -7px 7px 21px -4px rgba(0,0,0,0.75);
+        align-self: center;
+    }

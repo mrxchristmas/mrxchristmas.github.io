@@ -1,0 +1,98 @@
+:root {
+    --c1: #ede1d2;
+    --c2: #dbc1ac;
+    --c3: #967259;
+    --c4: #634832;
+    --c5: #38220f;
+    --contentWidth: 1200px;
+    --defaultWIdth: 1200;
+    --defaultWidthVW: 80vw;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    /* max-width: 100vw; */
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--c5);
+}
+span, p, a, img, h1, h2, h3, h4, h5, h6{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#category_nav{
+    height: 40px;
+    width: 100vw;
+    background-color: var(--c1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+    #category_nav span{
+        font-size: 16px;
+        /* font-weight: bold; */
+        color: var(--c5);
+        padding: 8px;
+        margin-left: 10px;
+        /* background-color: red; */
+        cursor: pointer;
+    }
+    #category_nav span:hover{
+        /* background-color: var(--c2); */
+        font-weight: bold;
+        border-bottom: 3px solid var(--c5);
+    }
+
+#category_body{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+    #category_body #category_body_con{
+        width: 70vw;
+        height: auto;
+        /* background-color: red; */
+    }
+    #category_body #category_body_con h1{
+        color: var(--c5);
+        margin-bottom: 20px;
+    }
+    #category_body #category_body_con h2{
+        color: var(--c5);
+    }
+    #category_body #category_body_con .item_container{
+        height: auto;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    #category_body #category_body_con .item_container .item_widget{
+        width: 200px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        cursor: pointer;
+    }
+    #category_body #category_body_con .item_container .item_widget img{
+        height: 170px;
+        width: 170px;
+        background-color: var(--c1);
+        border-radius: 25px;
+        padding: 5px;
+        cursor: pointer;
+        
+    }
+    #category_body #category_body_con .item_container .item_widget span{
+        padding: 10px;
+        color: c5;
+    }
